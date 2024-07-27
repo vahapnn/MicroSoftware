@@ -1,0 +1,25 @@
+﻿@model MicroYazilim.Models.Teklif
+@{
+    ViewData["Title"] = "TeklifAl";
+}
+<link href="c:\users\asus\source\repos\microyazilim\microyazilim\wwwroot\css\teklif.css" rel="stylesheet" />
+<h1>TeklifAl</h1>
+<div class="teklifmain">
+  <form method="post">
+    <b>Ad Soyad</b>
+    @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+    <br />
+    <b>Firma İsmi</b>
+    @Html.TextBoxFor(x => x.FirmaIsmi, new { @class = "form-control" })
+    <br />
+    <b>Email</b>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <b>Telefon</b>
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
+    <br />
+    <b>Hizmet Türü</b>
+    @Html.TextBoxFor(x => x.HizmetTuru, new { @class = "form-control" })
+    <button class="btn btn-info">Teklif Al</button>
+  </form>
+</div>

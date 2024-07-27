@@ -1,0 +1,22 @@
+﻿@model MicroYazilim.Models.Iletisim
+@{
+    ViewData["Title"] = "IletisimBilgileri";
+}
+
+<h1>IletisimBilgileri</h1>
+<form method="post">
+    <b>Ad</b>
+    @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+    <br />
+    <b>Firma İsmi</b>
+    @Html.TextBoxFor(x => x.SoyAd, new { @class = "form-control" })
+    <br />
+    <b>Email</b>
+    @Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+    <br />
+    <b>Telefon</b>
+    @Html.TextBoxFor(x => x.Mesaj, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Gönder</button>
+</form>
+

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "ReferansDetails";
+}
+
+<h1>Referans Detay</h1>
+
+@model MicroYazilim.Models.Referanslar
+@Html.DisplayFor(x => x.Baslik)
+<br />
+@Html.DisplayFor(x => x.Icerik)
+<br />
+<img src="@Html.DisplayFor(x=>x.Resim)" width="900px" height="700px">
+

@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<MicroYazilim.Models.Hizmetler>
+<link href="~/css/fiyatlandirma.css" rel="stylesheet" />
+<link href="~/css/hizmet.css" rel="stylesheet" />
+<link href="~/css/ozet.css" rel="stylesheet" />
+<div class="main">
+    @foreach (var x in Model)
+    {
+        <div class="icerik">
+            @x.Baslik
+            <a asp-controller="Hizmet" asp-action="Details" asp-route-id="@x.id">
+                <img src="@x.Resim" width="300px" height="300px">
+            </a>
+        </div>
+    }
+</div>
+
+<div class="main2">
+    <div class="fiyatlandirma">
+        Fiyatlandırma
+    </div>
+    <div class="icerik2">
+        <p>Web Yazılım</p>
+        Uzman ekiplerimiz sayesinde titizlikle yürüttüğümüz projelerimizde genel olarak ücretlendirme politikamız
+        belli başlı konulara göre belirlenmektedir. Bu hususlar genel olarak; görev alacak personel sayısı,
+        projenin tamamlanma süresi, özel ek hizmetlerin bulunup bulunmadığı, projenin zorluk seviyesi ve sayfa
+        sayısı örnek olarak verilebilmektedir. Proje fiyatlandırması konusunda  
+        yürütülebilmesi için CodeLab müşteri hizmetleriyle iletişime geçmeniz gerekmektedir.
+        Yaptığımız modul başına 8000tl alıyoruz.
+
+    </div>
+    <div class="icerik2">
+        <p>App geliştirme</p>
+        İhtiyaçlarınız doğrultusunda ve beklentileriniz kapsamında detaylı planlama listelerinin oluşturulması
+        Listelenen planların projelendirme süreçlerinin oluşturulması
+        İstenilen özellikler ve kapsamlar içerisinde uzman ekiplerimiz tarafından gerekli yazılım süreç tasarımlarının 
+        ve uygulama iç dizayn proseslerinin oluşturulması
+        Yaptığımız modul başına 10000tl alıyoruz.
+    </div>
+    <div class="icerik2">
+        <p>ERP geliştirme</p>Şirket kültürümüz olarak belirlediğimiz en iyi ve kaliteli hizmet anlayışımızla
+        yazılım sektöründe yola çıktığımız takım arkadaşlarımız da dahil tüm CodeLab ekibi olarak şeffaflık, 
+        adil, güçlü iletişim, yüksek müşteri memnuniyeti, sürekli gelişim ve sürdürülebilirlik stratejileri 
+        doğrultusunda adım atmaktayız. Bu aldığımız doğru kararlar neticesinde günümüzde görülmektedir ki CodeLab
+        sektörün öncüleri arasında yerini almış bulunmaktadır
+        Yaptığımız modul başına 12000tl alıyoruz.
+
+    </div>
+    <div class="icerik2">
+        <p>Otomasyon geliştirme</p>
+        Özel yazılım alanında vermiş olduğumuz ücretlendirme politikalarımız bazı ana ve alt kriterlere göre farklılık göstermektedir. Bu kriterler başlıca şu şekilde verilebilmektedir;
+
+        Proje büyüklüğü
+        Projenin kapsamı
+        Projede görev alacak uzman sayısı
+        Tahmini teslimat süresi
+        Projede kullanılacak sayfa sayısı
+        Yaptığımız modul başına 15000tl alıyoruz.
+
+    </div>
+</div>
+<div class="ozet-main">
+    <div class="parca">
+        <p>112+</p>
+        Mutlu müşteri
+    </div>
+    <div class="parca">
+        <p>138+</p>
+        Aktif iş
+    </div>
+    <div class="parca">
+        <p>6+</p>
+        Aktif tecrübe
+    </div>
+</div>
